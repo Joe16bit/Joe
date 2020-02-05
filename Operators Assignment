@@ -1,0 +1,374 @@
+using System;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+
+
+        static void Main(string[] args)
+        {
+            int Oper = 0;
+            Int32 myX, myY, myNum1, myNum2, Total, myNum;
+            Boolean myClass, myQuit = false;
+
+            while (!myQuit)
+            {
+                Console.WriteLine("*************************************ENTER A NUMBER****************************************");
+                Console.WriteLine("1 for addition +,    2 for subtraction -, 3 for division /,   4 for multiplicaiton *");
+                Console.WriteLine("5 for modulus %, 6 for increment ++, 7 for decrement --, 8 for relational not !");
+                Console.WriteLine("9 for less than <, 10 for greater than >, 11 for less than or equal to <=");
+                Console.WriteLine("12 for greater than or equal to >=, 13 for equal to ==, 14 for assignment +=");
+                Console.WriteLine("15 for assignment -=, 16 for assignment /= 17 for assignment *= 18 for assignment %=");
+                Console.WriteLine("19 for assignment =, 20 for assignment && 21 for assignment ||, 22 for assignment ?: 23 for !");
+                Console.WriteLine("**************************************99 TO QUIT******************************************");
+
+                int num = Convert.ToInt32(Console.ReadLine());
+                Oper = num;
+                Console.WriteLine("");
+                Console.WriteLine("");
+                Console.WriteLine("");
+                Console.WriteLine("");
+                Console.WriteLine("");
+
+                switch (Oper)
+                {
+                    case 1:
+                        Console.WriteLine("ADDITION");
+                        Console.WriteLine("Enter the first number");
+                        myNum1 = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Enter the second number");
+                        myNum2 = Convert.ToInt32(Console.ReadLine());
+                        myX = myNum1;
+                        myY = myNum2;
+                        Total = myX + myY;
+                        Console.WriteLine("The answer for {0} + {1} = {2}", myX, myY, Total);
+                        break;
+
+
+
+
+                    case 2:
+                        Console.WriteLine("SUBTRACTION");
+                        Console.WriteLine("Enter the first number");
+                        myNum1 = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Enter the second number");
+                        myNum2 = Convert.ToInt32(Console.ReadLine());
+                        myX = myNum1;
+                        myY = myNum2;
+                        Total = myX - myY;
+                        Console.WriteLine("The answer for {0} - {1} = {2}", myX, myY, Total);
+                        break;
+
+
+
+
+                    case 3:
+                        Console.WriteLine("DIVISION");
+                        Console.WriteLine("Enter the first number");
+                        myNum1 = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Enter the second number");
+                        myNum2 = Convert.ToInt32(Console.ReadLine());
+                        myX = myNum1;
+                        myY = myNum2;
+                        Total = myX / myY;
+                        Console.WriteLine("The answer for {0} / {1} = {2}", myX, myY, Total);
+                        break;
+
+
+
+
+                    case 4:
+                        Console.WriteLine("MULTIPLICATION");
+                        Console.WriteLine("Enter the first number");
+                        myNum1 = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Enter the second number");
+                        myNum2 = Convert.ToInt32(Console.ReadLine());
+                        myX = myNum1;
+                        myY = myNum2;
+                        Total = myX * myY;
+                        Console.WriteLine("The answer for {0} * {1} = {2}", myX, myY, Total);
+                        break;
+
+
+
+                    case 5:
+                        Console.WriteLine("MODULATION");
+                        Console.WriteLine("Enter the first number");
+                        myNum1 = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Enter the second number");
+                        myNum2 = Convert.ToInt32(Console.ReadLine());
+                        myX = myNum1;
+                        myY = myNum2;
+                        Total = myX % myY;
+                        Console.WriteLine("The answer for {0} % {1} = {2}", myX, myY, Total);
+                        break;
+
+
+
+                    case 6:
+                        Console.WriteLine("INCREMENT");
+                        Console.WriteLine("Enter the number");
+                        myNum1 = Convert.ToInt32(Console.ReadLine());
+                        myX = myNum1;
+                        Total = myX++;
+                        Console.WriteLine("The answer is {0}  ", myX, Total);
+                        break;
+
+
+                    case 7:
+                        Console.WriteLine("DECREMENT");
+                        Console.WriteLine("Enter the number");
+                        myNum1 = Convert.ToInt32(Console.ReadLine());
+                        myX = myNum1;
+                        Total = myX--;
+                        Console.WriteLine("The answer is {0}  ", myX, Total);
+                        break;
+
+
+                    case 8:
+                        Console.WriteLine("RELATIONAL NOT");
+                        Console.WriteLine("Enter the number five");
+                        myNum1 = Convert.ToInt32(Console.ReadLine());
+                        myX = myNum1;
+                        if (myNum1 != 5)
+                        {
+                            Console.WriteLine("Wrong");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Correct");
+                        }
+
+                        break;
+
+
+                    case 9:
+                        Console.WriteLine("LESS THAN");
+                        Console.WriteLine("Enter an number that is less than 85");
+                        myNum1 = Convert.ToInt32(Console.ReadLine());
+                        myX = myNum1;
+                        if (myNum1 < 85)
+                        {
+                            Console.WriteLine("Correct");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Wrong");
+                        }
+                        break;
+
+
+                    case 10:
+                        Console.WriteLine("GREATER THAN");
+                        Console.WriteLine("Enter an number that is greater than 23");
+                        myNum1 = Convert.ToInt32(Console.ReadLine());
+                        myX = myNum1;
+                        if (myNum1 > 23)
+                        {
+                            Console.WriteLine("Correct");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Wrong");
+                        }
+                        break;
+
+
+                    case 11:
+                        Console.WriteLine("LESS THAN OR EQUAL TO");
+                        Console.WriteLine("Enter an number that is less than or equal to 72");
+                        myNum1 = Convert.ToInt32(Console.ReadLine());
+                        myX = myNum1;
+                        if (myNum1 <= 72)
+                        {
+                            Console.WriteLine("Correct");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Wrong");
+                        }
+                        break;
+
+
+                    case 12:
+                        Console.WriteLine("GREATER THAN OR EQUAL TO");
+                        Console.WriteLine("Enter an number that is greater than or equal to 84");
+                        myNum1 = Convert.ToInt32(Console.ReadLine());
+                        myX = myNum1;
+                        if (myNum1 >= 84)
+                        {
+                            Console.WriteLine("Correct");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Wrong");
+                        }
+                        break;
+
+
+                    case 13:
+                        Console.WriteLine("EQUAL TO");
+                        Console.WriteLine("Enter an number that is equal to 63");
+                        myNum1 = Convert.ToInt32(Console.ReadLine());
+                        myX = myNum1;
+                        if (myNum1 == 63)
+                        {
+                            Console.WriteLine("Correct");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Wrong");
+                        }
+                        break;
+
+
+                    case 14:
+                        Console.WriteLine("ASSIGNMENT +");
+                        Console.WriteLine("The number is 8");
+                        myNum = 8;
+                        Console.WriteLine("Enter the number");
+                        myNum = Convert.ToInt32(Console.ReadLine());
+                        myX = myNum;
+                        Total = myNum += myX;
+                        Console.WriteLine("The answer for 8 += {0} is {1}", myX, Total);
+                        break;
+
+
+                    case 15:
+                        Console.WriteLine("ASSIGNMENT -");
+                        Console.WriteLine("The number is 10");
+                        myNum = 24;
+                        Console.WriteLine("Enter the number");
+                        myNum = Convert.ToInt32(Console.ReadLine());
+                        myX = myNum;
+                        Total = myNum -= myX;
+                        Console.WriteLine("The answer for 24 -= {0} is {1}", myX, Total);
+                        break;
+
+
+                    case 16:
+                        Console.WriteLine("ASSIGNMENT /");
+                        Console.WriteLine("The number is 64");
+                        myNum = 24;
+                        Console.WriteLine("Enter the number");
+                        myNum = Convert.ToInt32(Console.ReadLine());
+                        myX = myNum;
+                        Total = myNum /= myX;
+                        Console.WriteLine("The answer for 64 /= {0} is {1}", myX, Total);
+                        break;
+
+
+                    case 17:
+                        Console.WriteLine("ASSIGNMENT #");
+                        Console.WriteLine("The number is 33");
+                        myNum = 24;
+                        Console.WriteLine("Enter the number");
+                        myNum = Convert.ToInt32(Console.ReadLine());
+                        myX = myNum;
+                        Total = myNum *= myX;
+                        Console.WriteLine("The answer for 33 *= {0} is {1}", myX, Total);
+                        break;
+
+
+                    case 18:
+                        Console.WriteLine("ASSIGNMENT %");
+                        Console.WriteLine("The number is 24");
+                        myNum = 24;
+                        Console.WriteLine("Enter the number");
+                        myNum = Convert.ToInt32(Console.ReadLine());
+                        myX = myNum;
+                        Total = myNum %= myX;
+                        Console.WriteLine("The answer for 24 %= {0} is {1}", myX, Total);
+                        break;
+
+
+                    case 19:
+                        Console.WriteLine("ASSIGNMENT =");
+                        Console.WriteLine("Enter the number");
+                        myNum = Convert.ToInt32(Console.ReadLine());
+                        myX = myNum;
+                        Console.WriteLine("Your number is {0}", myX);
+                        break;
+
+
+                    case 20:
+                        bool a = true;
+                        bool b = false;
+                        Console.WriteLine("ASSIGNMENT &&");
+                        Console.WriteLine("Enter a number greater than 1");
+                        myNum1 = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Enter the another number greater than 1");
+                        myNum2 = Convert.ToInt32(Console.ReadLine());
+                        myX = myNum1;
+                        myY = myNum2;
+                        Total = myX + myY;
+                        if ((myX > 1) && (myY > 1))
+                        {
+                            Console.WriteLine("Correct");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Incorrect");
+                        }
+                        break;
+
+
+                    case 21:
+                        Console.WriteLine("ASSIGNMENT ||");
+                        Console.WriteLine("Enter a number greater than 1");
+                        myNum1 = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Enter the another number greater than 1");
+                        myNum2 = Convert.ToInt32(Console.ReadLine());
+                        myX = myNum1;
+                        myY = myNum2;
+                        Total = myX + myY;
+                        if ((myX > 1) || (myY > 1))
+                        {
+                            Console.WriteLine("Correct");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Incorrect");
+                        }
+                        break;
+
+
+                    case 22:
+                        Console.WriteLine("ASSIGNMENT ?:");
+                        Console.WriteLine("Enter a number greater than 30");
+                        myNum1 = Convert.ToInt32(Console.ReadLine());
+                        myX = myNum1;
+                        int Num = 30;
+                        var result = myNum1 > Num ? "Correct" : "Incorrect";
+                        Console.WriteLine(result);
+                        break;
+
+
+
+                    case 23:
+                        Console.WriteLine("ASSIGNMENT !");
+                        Console.WriteLine("Enter a number that is not 6");
+                        myNum1 = Convert.ToInt32(Console.ReadLine());
+                        myX = myNum1;
+                        int Numb = 6;
+                        var Result1 = myNum1 != Numb ? "Correct" : "Incorrect";
+                        Console.WriteLine(Result1);
+                    break;
+                    
+                    
+                    
+                    case 99:
+                        myQuit = true;
+                        Console.WriteLine("( ͡° ͜ʖ ͡°)");
+                        Console.ReadKey();
+                        break;
+                    default:
+                        Console.WriteLine("bruh");
+                        break;
+                }
+            }
+
+        }
+    }
+}
